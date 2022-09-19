@@ -1,8 +1,8 @@
 # Create an awesome 3d Landing Page for Apple iphone in React JS
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=ApacheSpark&label=Stars&maxAge=2592000)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=KashFlow)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow&maxAge=2592000)&nbsp;&nbsp;<br />
+![GitHub stars](https://img.shields.io/github/stars/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
+![GitHub forks](https://img.shields.io/github/forks/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
+![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
 
 This repository contains final code for Apple iphone 3d landing page in ReactJS. <br />
 
