@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/codebucks27/Apple-iphone-3d-landing-page-starter-Code?style=social&logo=KashFlow)&nbsp;&nbsp;
 ![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow&maxAge=2592000)&nbsp;&nbsp;<br />
 
-This repository contains starter code for Apple iphone 3d landing page in ReactJS. <br />
+This repository contains final code for Apple iphone 3d landing page in ReactJS. <br />
 
 View Demo👇: <br />
 https://apple-iphone14.netlify.app/ <br />
@@ -17,7 +17,7 @@ https://youtu.be/edr2o59Twrs <br />
 [![YouTube Video Views](https://img.shields.io/youtube/views/edr2o59Twrs?style=social)](https://youtu.be/edr2o59Twrs)<br />
 
 <h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br><br>
+<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br><br>
 
 ### Images of The 3d landing page Website:
 
