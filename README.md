@@ -1,7 +1,7 @@
 # Create an awesome 3d Landing Page for Apple iphone in React JS
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Apple-iphone-3d-landing-page-starter-Code?style=social&logo=ApacheSpark&label=Stars&maxAge=2592000)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Apple-iphone-3d-landing-page-starter-Code?style=social&logo=KashFlow)&nbsp;&nbsp;
+![GitHub stars](https://img.shields.io/github/stars/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=ApacheSpark&label=Stars&maxAge=2592000)&nbsp;&nbsp;
+![GitHub forks](https://img.shields.io/github/forks/codebucks27/3D-Landing-page-for-Apple-iPhone?style=social&logo=KashFlow)&nbsp;&nbsp;
 ![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow&maxAge=2592000)&nbsp;&nbsp;<br />
 
 This repository contains final code for Apple iphone 3d landing page in ReactJS. <br />
@@ -21,13 +21,13 @@ https://youtu.be/cT160dOzpGY <br />
 
 ### Images of The 3d landing page Website:
 
-![HOME](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Hero-section-desktop.png)
-![Quote](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Quote.png)
-![Color](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Color-section.png)
-![Pricing](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Pricing%20Section.png)
-![HOME-Mobile](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Hero-section-mobile.png)
-![Color-Mobile](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Color-section-mobile.png)
-![Pricing-Mobile](https://github.com/codebucks27/Apple-iphone-3d-landing-page-starter-Code/blob/main/website-images/Pricing%20Section-mobile.png)
+![HOME](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Hero-section-desktop.png)
+![Quote](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Quote.png)
+![Color](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Color-section.png)
+![Pricing](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Pricing%20Section.png)
+![HOME-Mobile](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Hero-section-mobile.png)
+![Color-Mobile](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Color-section-mobile.png)
+![Pricing-Mobile](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Pricing%20Section-mobile.png)
 
 ### Resources Used in This Project
 
