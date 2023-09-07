@@ -16,9 +16,6 @@ If you want to learn how to create it please follow below tutorial👇: <br />
 https://youtu.be/cT160dOzpGY <br />
 [![YouTube Video Views](https://img.shields.io/youtube/views/cT160dOzpGY?style=social)](https://youtu.be/cT160dOzpGY)<br />
 
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br><br>
-
 ### Images of The 3d landing page Website:
 
 ![HOME](https://github.com/codebucks27/3D-Landing-page-for-Apple-iPhone/blob/main/website-images/Hero-section-desktop.png)
