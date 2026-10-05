@@ -119,3 +119,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Tooling upgrade
+
+The sections above are the original tutorial documentation. The project now uses Bun 1.4.2, Vite 8, React 19, Fiber 9, Drei 10, explicit Three.js, GSAP 3, styled-components 6 and web-vitals 6. ESLint 9 and TypeScript 6 are the latest versions compatible with the lint plugins; Vitest replaces the CRA test runner. Source migrations update GSAP imports, transient styling props, metrics observers and Three.js light units while preserving the page. Use Node 24.15+ and the pinned Bun version:
+
+```sh
+bun install --frozen-lockfile
+bun run start
+bun run lint
+bun run typecheck
+bun run test
+bun run build
+bun run preview
+```
+
+Development stays on port 3000; production output stays in `build/`. Vite keeps the public asset paths, SPA history fallback, CRA `REACT_APP_*`, `NODE_ENV` and `PUBLIC_URL` compatibility (including HTML placeholders). Only public environment values enter the client bundle. Vitest supplies offline media-query and ResizeObserver support. The unchanged scaffold test still expects a missing “learn react” link; the new lint/typecheck gates expose inherited gaps.

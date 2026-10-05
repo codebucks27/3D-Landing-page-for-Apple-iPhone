@@ -8,11 +8,11 @@ title: Apple iPhone 13 Pro Max
 
 import React, { useRef, useLayoutEffect } from "react";
 import { useGLTF } from "@react-three/drei";
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useThree } from "@react-three/fiber";
 
 export default function Model({ ...props }) {
-  const group = useRef();
+  const group = useRef(null);
   const { nodes, materials } = useGLTF("/scene.gltf");
 
   let camera = useThree((state) => state.camera);

@@ -10,10 +10,11 @@ import ColorSection from "./sections/ColorSection";
 import CameraSection from "./sections/CameraSection";
 import PricingSection from "./sections/PricingSection";
 import { ColorContextProvider } from "./context/ColorContext";
+import { StyleSheetManager } from "styled-components";
 
 function App() {
   return (
-    <>
+    <StyleSheetManager enableVendorPrefixes>
       <GlobalStyle />
       <Quote />
       <PhoneModel />
@@ -27,7 +28,7 @@ function App() {
         <CameraSection />
         <PricingSection />
       </ColorContextProvider>
-    </>
+    </StyleSheetManager>
   );
 }
 

@@ -9,6 +9,7 @@ import { useRef } from "react";
 import { useContext } from "react";
 import { ColorContext } from "./../context/ColorContext";
 import { useEffect } from "react";
+import { ACESFilmicToneMapping, SRGBColorSpace } from "three";
 
 const Container = styled.div`
   width: 100vw;
@@ -56,14 +57,14 @@ const Colors = styled.ul`
   }
 `;
 
-const Color = styled.li`
+const Color = /** @type {typeof styled.li<{ $color: string }>} */ (styled.li)`
   list-style: none;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
 
   border-radius: 50%;
-  background-color: ${(props) => props.color};
+  background-color: ${(props) => props.$color};
   margin: 0.5rem 0;
 
   border: 1px solid var(--dark);
@@ -152,9 +153,13 @@ const PricingSection = () => {
       <Section ref={sectionRef}>
         <Phone>
           <IndicatorText>360&deg; &#x27F2; </IndicatorText>
-          <Canvas camera={{ fov: 14 }}>
-            <ambientLight intensity={1} />
-            <directionalLight intensity={0.4} />
+          <Canvas
+            camera={{ fov: 14 }}
+            gl={{ outputColorSpace: SRGBColorSpace, toneMapping: ACESFilmicToneMapping }}
+          >
+            {/* Three r155 removed the legacy PI multiplier from light intensities. */}
+            <ambientLight intensity={Math.PI} />
+            <directionalLight intensity={0.4 * Math.PI} />
             <Suspense fallback={null}>
               <Model3 />
             </Suspense>
@@ -167,33 +172,33 @@ const PricingSection = () => {
 
           <Colors>
             <Color
-              color="#9BB5CE"
+              $color="#9BB5CE"
               onClick={() =>
                 updateColor("#9BB5CE", "Sierra Blue", "155, 181, 206")
               }
             />
             <Color
-              color="#F9E5C9"
+              $color="#F9E5C9"
               onClick={() => updateColor("#F9E5C9", "Gold", "249, 229, 201")}
             />
             <Color
-              color="#505F4E"
+              $color="#505F4E"
               onClick={() =>
                 updateColor("#505F4E", "Alpine Green", "80, 95, 78")
               }
             />
             <Color
-              color="#574f6f"
+              $color="#574f6f"
               onClick={() =>
                 updateColor("#574f6f", "Deep Purple", "87, 79, 111")
               }
             />
             <Color
-              color="#A50011"
+              $color="#A50011"
               onClick={() => updateColor("#A50011", "Red", "165, 0, 17")}
             />
             <Color
-              color="#215E7C"
+              $color="#215E7C"
               onClick={() => updateColor("#215E7C", "Blue", "33, 94, 124")}
             />
           </Colors>
