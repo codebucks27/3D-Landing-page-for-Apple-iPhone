@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 
 export default function Model2({ ...props }) {
-  const group = useRef();
+  const group = useRef(null);
   const { nodes, materials } = useGLTF("/scene.gltf");
 
   let camera = useThree((state) => state.camera);

@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { AdaptiveDpr, AdaptiveEvents, Environment } from "@react-three/drei";
 import Model from "../components/Scene";
 import { Suspense } from "react";
+import { ACESFilmicToneMapping, SRGBColorSpace } from "three";
 
 const Container = styled.div`
   width: 100vw;
@@ -18,9 +19,13 @@ const Container = styled.div`
 const PhoneModel = () => {
   return (
     <Container id="phone-model">
-      <Canvas camera={{ fov: 14 }}>
-        <ambientLight intensity={1.25} />
-        <directionalLight intensity={0.4} />
+      <Canvas
+        camera={{ fov: 14 }}
+        gl={{ outputColorSpace: SRGBColorSpace, toneMapping: ACESFilmicToneMapping }}
+      >
+        {/* Three r155 removed the legacy PI multiplier from light intensities. */}
+        <ambientLight intensity={1.25 * Math.PI} />
+        <directionalLight intensity={0.4 * Math.PI} />
         <Suspense fallback={null}>
           <Model />
         </Suspense>

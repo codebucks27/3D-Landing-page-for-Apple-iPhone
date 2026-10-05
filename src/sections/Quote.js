@@ -1,9 +1,11 @@
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React from "react";
 import { useRef } from "react";
 import { useLayoutEffect } from "react";
 import styled, { keyframes } from "styled-components";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Section = styled.section`
   width: 100vw;
@@ -33,7 +35,7 @@ const moveUp = keyframes`
 }
 `;
 
-const Text = styled.p`
+const Text = /** @type {typeof styled.p<{ $delay: string }>} */ (styled.p)`
   width: 50%;
   font-size: var(--fontlg);
   position: relative;
@@ -47,7 +49,7 @@ const Text = styled.p`
     animation-duration: 2.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    animation-delay: ${(props) => props.delay};
+    animation-delay: ${(props) => props.$delay};
     font-family: var(--fontL);
     background-image: linear-gradient(-45deg, var(--gradient));
     background-clip: text;
@@ -79,7 +81,6 @@ const Text = styled.p`
 `;
 
 const Quote = () => {
-  gsap.registerPlugin(ScrollTrigger);
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -100,27 +101,27 @@ const Quote = () => {
   return (
     <Section ref={sectionRef}>
       <TextContainer>
-        <Text delay="0s">
+        <Text $delay="0s">
           {" "}
           <span>&#8220; You can't connect the dots looking forward;</span>{" "}
         </Text>
-        <Text delay="0.4s">
+        <Text $delay="0.4s">
           {" "}
           <span>
             &nbsp;&nbsp;&nbsp;you can only connect them looking backward.
           </span>{" "}
         </Text>
-        <Text delay="0.8s">
+        <Text $delay="0.8s">
           {" "}
           <span>&nbsp;&nbsp;&nbsp;so you have to trust that the dots</span>{" "}
         </Text>
-        <Text delay="1.2s">
+        <Text $delay="1.2s">
           {" "}
           <span>
             &nbsp;&nbsp;&nbsp;will somehow connect in your future. &#8221;
           </span>{" "}
         </Text>
-        <Text delay="1.6s">
+        <Text $delay="1.6s">
           {" "}
           <span className="author">&#x23AF; Steve Jobs</span>{" "}
         </Text>

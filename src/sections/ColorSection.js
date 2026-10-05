@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import gsap from "gsap";
+import { gsap } from "gsap";
 import React from "react";
 import { useRef, useLayoutEffect } from "react";
 import styled from "styled-components";
@@ -9,6 +9,7 @@ import Model2 from "../components/Scene2";
 import { useContext } from "react";
 import { ColorContext } from "./../context/ColorContext";
 import { useEffect } from "react";
+import { ACESFilmicToneMapping, SRGBColorSpace } from "three";
 
 const Section = styled.section`
   width: 100vw;
@@ -162,9 +163,13 @@ const ColorSection = () => {
       <Left ref={leftRef} />
       <Center ref={textRef} />
       <Right ref={rightRef}>
-        <Canvas camera={{ fov: 6.5 }}>
-          <ambientLight intensity={1.25} />
-          <directionalLight intensity={0.4} />
+        <Canvas
+          camera={{ fov: 6.5 }}
+          gl={{ outputColorSpace: SRGBColorSpace, toneMapping: ACESFilmicToneMapping }}
+        >
+          {/* Three r155 removed the legacy PI multiplier from light intensities. */}
+          <ambientLight intensity={1.25 * Math.PI} />
+          <directionalLight intensity={0.4 * Math.PI} />
           <Suspense fallback={null}>
             <Model2 />
           </Suspense>
